@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shahnawaj Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">SA</a>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#showreel">Showreel</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button class="theme-toggle-nav" id="theme-toggle-nav">
+                <i class="fas fa-moon"></i>
+              </button>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+      <div class="particles" id="particles-js"></div>
+      <div class="container">
+        <div class="hero-content">
+          <h1>Shahnawaj</h1>
+          <h3>VFX Artist & 3D Modeler</h3>
+          <p>
+            Crafting immersive worlds through cutting-edge VFX and 3D artistry.
+            Bringing imagination to life with every pixel and polygon.
+          </p>
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+            alt="Alex Carter"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <div class="about-content">
+          <p>
+            Hello! I'm Shahnawaj, a passionate VFX artist and 3D modeler with
+            over 7 years of experience in the industry. I specialize in creating
+            stunning visual effects and detailed 3D assets for films, games, and
+            commercials.
+          </p>
+          <p>
+            My journey began with a fascination for how movies create impossible
+            worlds, which led me to pursue a degree in Digital Arts and
+            Animation. Since then, I've had the privilege to work with studios
+            like Digital Domain and Framestore on projects ranging from
+            blockbuster films to indie games.
+          </p>
+
+          <div class="skills">
+            <h3>My Skills</h3>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Maya</span>
+                <span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Blender</span>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>After Effects</span>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 85%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Houdini</span>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Substance Painter</span>
+                <span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <div class="container">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="vfx">VFX</button>
+          <button class="filter-btn" data-filter="3d">3D Models</button>
+          <button class="filter-btn" data-filter="game">Game Assets</button>
+        </div>
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="vfx">
+            <img
+              src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              alt="Project 1"
+              class="portfolio-img"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">VFX</span>
+              <h3 class="portfolio-title">Cosmic Explosion</h3>
+              <p>Created for sci-fi feature film "Galactic Odyssey"</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="3d">
+            <img
+              src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              alt="Project 2"
+              class="portfolio-img"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">3D Model</span>
+              <h3 class="portfolio-title">Cyberpunk Character</h3>
+              <p>High-poly character design for concept art</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="game">
+            <img
+              src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              alt="Project 3"
+              class="portfolio-img"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">Game Asset</span>
+              <h3 class="portfolio-title">Fantasy Sword</h3>
+              <p>Weapon model for RPG game "Realm of Legends"</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="vfx">
+            <img
+              src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              alt="Project 4"
+              class="portfolio-img"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">VFX</span>
+              <h3 class="portfolio-title">Magical Energy</h3>
+              <p>Spell effects for fantasy series "The Mage Wars"</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="3d">
+            <img
+              src="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              alt="Project 5"
+              class="portfolio-img"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">3D Model</span>
+              <h3 class="portfolio-title">Sci-Fi Environment</h3>
+              <p>Modular kit for space station interiors</p>
+            </div>
+          </div>
+          <div class="portfolio-item" data-category="game">
+            <img
+              src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+              alt="Project 6"
+              class="portfolio-img"
+              loading="lazy"
+            />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category">Game Asset</span>
+              <h3 class="portfolio-title">Creature Design</h3>
+              <p>Alien creature for horror game "Deep Space"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showreel Section -->
+    <section id="showreel">
+      <div class="container">
+        <h2>My Showreel</h2>
+        <div class="video-container">
+          <video
+            id="showreel-video"
+            poster="https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+            loading="lazy"
+          >
+            <source src="your-showreel.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-controls">
+            <button id="play-btn"><i class="fas fa-play"></i></button>
+            <button id="mute-btn"><i class="fas fa-volume-up"></i></button>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <button id="fullscreen-btn"><i class="fas fa-expand"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Let's collaborate on something amazing!</h3>
+            <p>
+              I'm currently available for freelance work and full-time
+              positions. If you have a project that needs creative VFX or 3D
+              work, don't hesitate to reach out.
+            </p>
+            <p><i class="fas fa-envelope"></i> Shahnawaj@vfxartist.com</p>
+            <p><i class="fas fa-phone"></i> +91 555 123-4567</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-artstation"></i></a>
+              <a href="#"><i class="fab fa-behance"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+          </div>
+          <div class="contact-form">
+            <form id="form">
+              <div class="form-group">
+                <input type="text" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+              </div>
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2023 Shahnawaj. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="back-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
